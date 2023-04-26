@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+.cards__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(200 209 243);
+}
+.card{
+    position: relative;
+    max-width: 20em;
+    min-height: 21em;
+    width: 100%;
+    background: linear-gradient(45deg, #0d416f 0%, #000428 100%);
+    border-radius: 7em 5px 5em 5px;
+    color: white;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+.card__details{
+    padding: 30px 20px 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card__content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__name{
+    position: absolute;
+    top: 14px;
+    left: -20px;
+    border-radius: 5px 5em 5px 5em;
+    background: #fff;
+    padding: 7px 30px;
+    box-shadow: 4px 1px 10px 2px rgba(0,0,0,0.83);
+    /* box-shadow: 15px 5px 25px #101010; */
+}
+.card__title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+.card__paragraph{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(32, 31, 31);
+}
+.card__picture{
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 5.3em;
+    height: 5.3em;
+    background: linear-gradient(45deg, #a544ff 0%, #5d2cfe 100%);
+    border-radius: 50%;
+    border: 1px solid #1f1f1f;
+
+
+}
+.card__img {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    right: 6px;
+    max-width: 4.5em;
+    border-radius: 50%;
+    height: 4.5em;
+    object-fit: cover;
+    border: 1px solid #1f1f1f;
+}
+.card__description{
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+}
+.card__p{
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    z-index: 1;
+    bottom: 30px;
+}
+.card__initial{
+    position: absolute;
+    margin: 0;
+    left: 0.1em;
+    bottom: -14px;
+    font-size: 8rem;
+    font-weight: bold;
+    color: #2c314a;
+    z-index: 0;
+}
+.card__btn{
+    position: absolute;
+    bottom: -37px;
+    right: 60px;
+    background: linear-gradient(45deg, #a544ff 0%, #5d2cfe 100%);
+    padding: 1.5em;
+    border-radius: 0 0 50px 0;
+    box-shadow: 0px 5px 15px #a544ff;
+    transition: 0.7s;
+}
+.card__btn:hover{
+    transform: translateY(-10px);
+}
+.fa-sharp {
+    color: #fff;
+}
